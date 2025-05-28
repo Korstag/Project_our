@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">Logo</div>
+                <nav class="nav">
+                    <a class="nav__link" href="#home">Главная</a>
+                    <a class="nav__link" href="#about">О нас</a>
+                    <a class="nav__link" href="#services">Услуги</a>
+                    <a class="nav__link" href="#portfolio">Портфолио</a>
+                    <a class="nav__link" href="#team">Команда</a>
+                    <a class="nav__link" href="#reviews">Отзывы</a>
+                    <a class="nav__link" href="#contact">Контакты</a>
+                </nav>
+                <button class="nav-toggle">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Секция Главная -->
+        <section class="section section--home" id="home">
+            <div class="container">
+                <div class="home__content">
+                    <h1 class="home__title animate__animated animate__fadeInDown">Добро пожаловать на наш сайт</h1>
+                    <p class="home__text animate__animated animate__fadeInUp">Мы создаем современные и адаптивные веб-сайты</p>
+                    <a href="#contact" class="btn btn--primary animate__animated animate__fadeInUp">Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция О нас -->
+        <section class="section section--about" id="about">
+            <div class="container">
+                <h2 class="section__title">О нас</h2>
+                <div class="about__content">
+                    <div class="about__img">
+                        <img src="images/about.avif" alt="О компании">
+                    </div>
+                    <div class="about__text">
+                        <p>Мы - команда профессионалов, работающая в сфере веб-разработки более 10 лет. Наши специалисты помогут реализовать любые ваши идеи в интернете.</p>
+                        <p>Наш подход сочетает в себе креативность, техническое мастерство и глубокое понимание потребностей клиентов.</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skill__name">HTML/CSS</div>
+                                <div class="skill__bar">
+                                    <div class="skill__level skill__level--90"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__name">JavaScript</div>
+                                <div class="skill__bar">
+                                    <div class="skill__level skill__level--80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__name">Дизайн</div>
+                                <div class="skill__bar">
+                                    <div class="skill__level skill__level--75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Услуги -->
+        <section class="section section--services" id="services">
+            <div class="container">
+                <h2 class="section__title">Наши услуги</h2>
+                <div class="services">
+                    <div class="service">
+                        <div class="service__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service__title">Веб-разработка</h3>
+                        <p class="service__text">Создание современных и адаптивных веб-сайтов любой сложности.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service__icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service__title">Мобильные приложения</h3>
+                        <p class="service__text">Разработка кроссплатформенных мобильных приложений.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service__icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service__title">Дизайн</h3>
+                        <p class="service__text">Создание уникального дизайна для вашего бренда или продукта.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service__icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service__title">Маркетинг</h3>
+                        <p class="service__text">Продвижение вашего бизнеса в интернете.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Портфолио -->
+        <section class="section section--portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section__title">Наши работы</h2>
+                <div class="portfolio__filter">
+                    <button class="filter__btn active" data-filter="all">Все</button>
+                    <button class="filter__btn" data-filter="web">Веб-сайты</button>
+                    <button class="filter__btn" data-filter="app">Приложения</button>
+                    <button class="filter__btn" data-filter="design">Дизайн</button>
+                </div>
+                <div class="portfolio__items">
+                    <div class="portfolio__item" data-category="web">
+                        <img src="images/web.avif" alt="Проект 1">
+                        <div class="portfolio__overlay">
+                            <h3>Корпоративный сайт</h3>
+                            <a href="#" class="portfolio__link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio__item" data-category="app">
+                        <img src="images/mobile.avif" alt="Проект 2">
+                        <div class="portfolio__overlay">
+                            <h3>Мобильное приложение</h3>
+                            <a href="#" class="portfolio__link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio__item" data-category="design">
+                        <img src="images/brending.avif" alt="Проект 3">
+                        <div class="portfolio__overlay">
+                            <h3>Брендинг</h3>
+                            <a href="#" class="portfolio__link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio__item" data-category="web">
+                        <img src="images/market.avif" alt="Проект 4">
+                        <div class="portfolio__overlay">
+                            <h3>Интернет-магазин</h3>
+                            <a href="#" class="portfolio__link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Команда -->
+        <section class="section section--team" id="team">
+            <div class="container">
+                <h2 class="section__title">Наша команда</h2>
+                <div class="team">
+                    <div class="team__member">
+                        <div class="member__photo">
+                            <img src="images/frontend.avif" alt="Иван Иванов">
+                            <div class="member__social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member__name">Иван Иванов</h3>
+                        <p class="member__position">Frontend разработчик</p>
+                    </div>
+                    <div class="team__member">
+                        <div class="member__photo">
+                            <img src="images/desinger.avif" alt="Ева Петров">
+                            <div class="member__social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member__name">Ева Петрова</h3>
+                        <p class="member__position">Дизайнер</p>
+                    </div>
+                    <div class="team__member">
+                        <div class="member__photo">
+                            <img src="images/backend.avif" alt="Сергей Сергеев">
+                            <div class="member__social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member__name">Сергей Сергеев</h3>
+                        <p class="member__position">Backend разработчик</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Отзывы -->
+        <section class="section section--reviews" id="reviews">
+            <div class="container">
+                <h2 class="section__title">Отзывы клиентов</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <div class="review__text">
+                            <p>"Отличная работа! Сайт был сделан вовремя и полностью соответствует нашим требованиям."</p>
+                        </div>
+                        <div class="review__author">
+                            <img src="images/client1.avif" alt="Ольга Смирнова">
+                            <div class="author__info">
+                                <h4>Ольга Смирнова</h4>
+                                <p>Директор ООО "Технологии"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__text">
+                            <p>"Профессиональный подход к делу. Рекомендую эту компанию всем, кто ценит качество."</p>
+                        </div>
+                        <div class="review__author">
+                            <img src="images/client2.avif" alt="Алексей Козлов">
+                            <div class="author__info">
+                                <h4>Алексей Козлов</h4>
+                                <p>Основатель Startup Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Контакты -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Свяжитесь с нами</h2>
+                <div class="contact">
+                    <div class="contact__info">
+                        <div class="info__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>г. Екатеринбург, ул. Московская, д. 1</p>
+                        </div>
+                        <div class="info__item">
+                            <i class="fas fa-phone"></i>
+                            <p>+7 (123) 456-78-90</p>
+                        </div>
+                        <div class="info__item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__form">
+                        <h3>Форма обратной связи</h3>
+                        <form id="feedbackForm">
+                            <div class="form__group">
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +7 (123) 456-78-90">
+                            </div>
+                            <div class="form__group">
+                                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">Отправить</button>
+                        </form>
+                        <div id="feedbackResults"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма подписки -->
+        <section class="section section--subscribe">
+            <div class="container">
+                <div class="subscribe">
+                    <h3>Подпишитесь на нашу рассылку</h3>
+                    <form id="subscribeForm">
+                        <div class="form__group">
+                            <input type="email" id="subscribeEmail" name="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn--primary">Подписаться</button>
+                        </div>
+                        <div class="form__group">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">Я согласен на обработку персональных данных</label>
+                        </div>
+                    </form>
+                    <div id="subscribeResults"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="logo">Logo</div>
+                    <p>Мы создаем современные и адаптивные веб-сайты для вашего бизнеса.</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <ul class="footer__contacts">
+                        <li><i class="fas fa-map-marker-alt"></i> г. Екатеринбург, ул. Московская, д. 1</li>
+                        <li><i class="fas fa-phone"></i> +7 (123) 456-78-90</li>
+                        <li><i class="fas fa-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Социальные сети</h4>
+                    <div class="footer__social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#home" class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
